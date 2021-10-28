@@ -14,6 +14,7 @@ trajectory_msgs/JointTrajectoryPoint admittance_rule_calculated_values  # Values
 
 geometry_msgs/PoseStamped current_pose                # Current pose from FK
 geometry_msgs/PoseStamped desired_pose                # goal pose to send to the robot
+geometry_msgs/PoseStamped relative_admittance         # accumulated admittance relative to user-commanded pose
 geometry_msgs/TransformStamped relative_desired_pose  # relative pose from the actual pose as result of the admittance rule
 
 string[] joint_names
